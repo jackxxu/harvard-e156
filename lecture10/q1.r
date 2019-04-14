@@ -14,3 +14,5 @@ ua_f = c_2_f(ua)
 u0_f = c_2_f(u0)
 var_p_f = (9.0/5)^2 * var_p
 (ua_f - u0_f)/sqrt(var_p_f)
+
+# part a:
