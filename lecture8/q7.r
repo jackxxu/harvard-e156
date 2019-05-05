@@ -1,5 +1,6 @@
 dataset.a.observed <- c(5037.1, 4913.9, 5148.2, 5061.8, 4949.4, 4945.9, 4965.5, 4997.9, 5009.4, 4876.1)
 dataset.b.observed <- c(4731.7, 5038.0, 4701.8, 4853.1, 4902.8, 5211.9, 5342.1, 5082.8, 4937.8, 4757.0)
+alpha <- 0.05 
 
 # part b sample mean and sample variance
 dataset.a.mean <- mean(dataset.a.observed)
