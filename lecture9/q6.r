@@ -4,8 +4,8 @@ data = list(
   c(23.7, 23.5, 20.7, 15.0, 22.2),
   c(21.7, 24.9, 25.3, 20.1, 24.2)
 )
-i <- length(data)
-j <- lengths(data[1])
+i <- length(data) #=> 3
+j <- lengths(data[1]) #=> 5
 
 # part b:  group specific means
 data.means <- unlist(lapply(data, mean))
@@ -49,7 +49,7 @@ data.sstot == data.sse + data.sst
 # part f: mst
 
 data.mst <- data.sst/(i - 1)
-data.mst
+data.mst #=> 13.722
 
 # part g: mse
 
@@ -63,5 +63,5 @@ data.f # => 1.894606
 
 # part i:
 
-data.p = 1 - pf(data.f, 2, 4)
-data.p # => 0.2637138
+data.p = 1 - pf(data.f, i-1, (j-1)*i)
+data.p # => 0.1927191

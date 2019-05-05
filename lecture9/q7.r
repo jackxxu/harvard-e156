@@ -14,7 +14,7 @@ data.means #=> 240.1429 248.7143 242.2857 245.8571
 
 # part b: value of sst & mst
 data.grand_mean <- mean(data.means)
-data.grand_mean # => 22.84
+data.grand_mean # => 244.25
 
 data.sst <- j * sum(
                   unlist(

@@ -12,7 +12,10 @@ data.alpha = 0.05
 data.u = qf(1-data.alpha/2, length(data.x)-1, length(data.y)-1)
 data.l = qf(data.alpha/2, length(data.x)-1, length(data.y)-1)
 
-data.u
-data.l
+data.u #=> 4.025994
+data.l #=> 0.2483859
 
-sample.variance(data.x)/sample.variance(data.y) #=> 0.1375478
+sample.f = sample.variance(data.x)/sample.variance(data.y) #=> 0.1375478
+
+sample.p = 2 * pf(0.1375478, length(data.x)-1, length(data.y)-1 )
+sample.p #-> 0.006849698
