@@ -11,17 +11,17 @@ dataset.expected #=> 5.079283 15.136264 22.553034 22.402681 16.689997  9.947238 
 
 # part b: pearson statistic
 dataset.pearson_statistic <- (dataset.observed - dataset.expected)^2/dataset.expected
-dataset.pearson_statistic 
+dataset.pearson_statistic
 #=> [1] 0.001237548 1.562864015 0.559749576 0.516823636 0.319719283 0.381184864
 #=> [7] 0.399275230
 
 # part c: degree of freedom
-dataset.degree_of_freedom <-  (length(dataset.observed) - 1) * (2 -1) 
-dataset.degree_of_freedom #=>  6
+dataset.degree_of_freedom <-  (length(dataset.observed) - 1) * (2 -1) - 1
+dataset.degree_of_freedom #=>  5
 
 # part d: pearson test
 dataset.chi_sqred <- sum(dataset.pearson_statistic)
 dataset.chi_sqred #=> 3.740854
 
 dataset.chi_squared_probability <- 1- pchisq(dataset.chi_sqred, df = dataset.degree_of_freedom)
-dataset.chi_squared_probability #=> 0.7116973
+dataset.chi_squared_probability #=> 0.5872962
