@@ -17,5 +17,3 @@ data.l #=> 0.2787147
 
 sample.f = sample.variance(data.x)/sample.variance(data.y) #=> 1.843939
 
-sample.p = 2 * pf(0.1375478, length(data.x)-1, length(data.y)-1 )
-sample.p #-> 0.003229192

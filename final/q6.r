@@ -9,7 +9,7 @@ y_mean #=> 17.77143
 
 # part a: beta hat and alpha hat
 sxx <- sum(unlist(lapply(data.x, function(i) { (i - x_mean) ^2 } )))
-sxx #=> 240
+sxx #=> 112
 
 sxy <- 0
 for (i in 1:length(data.x)) {
